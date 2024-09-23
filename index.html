@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Buy Tracker App</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 25px;
+    }
+    .header img {
+      width: 50px;
+      height: 50px;
+    }
+    .header h1 {
+      font-size: 24px;
+      margin-left: 30px;
+    }
+
+    .header h2{
+      font-size: 12px;
+      margin-left: 30px;
+    }
+
+    .instruction-step {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      height: fit-content;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .step-number {
+      background-color: #007bff;
+      color: white;
+      font-size: 14px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .step-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .step-image {
+      text-align: center;
+      height: fit-content;
+      width: fit-content;
+    }
+
+    .step-description {
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .step-image {
+      text-align: center;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .step-image img {
+      max-width: 70%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <img src="https://cdn.shopify.com/s/assets/images/logos/shopify-bag.png" alt="Shopify Logo">
+    <div>
+    <h1>Welcome to the Product Buy Tracker App Guide</h1>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+  <!-- Step 1: Go to themes -->
+  <div class="instruction-step">
+    <div class="step-header">
+      <div class="step-number">1</div>
+      <div class="step-title">Navigate to Online Themes</div>
+    </div>
+    <div class="step-description">
+      After you installed our app, go to your Shopify admin dashboard and navigate to Online Themes.
+    </div>
+    <div class="step-image">
+      <img src="themes-location.png" alt="Themes location"/>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+  <!-- Step 2: Choose theme customize -->
+  <div class="instruction-step">
+    <div class="step-header">
+      <div class="step-number">2</div>
+      <div class="step-title">Customize theme</div>
+    </div>
+    <div class="step-description">
+      Choose theme you want to apply and then hit customize button
+    </div>
+    <div class="step-image">
+      <img src="theme-customize.png" alt="Themes Customize"/>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+  <!-- Step 3: Add app to theme -->
+  <div class="instruction-step">
+    <div class="step-header">
+      <div class="step-number">3</div>
+      <div class="step-title">Add app to theme</div>
+    </div>
+    <div class="step-description">
+      <p>If you don't have <strong>Apps</strong> section,  Select <strong>Add section</strong> in <strong>Header</strong>.</p>
+      <p>If you've already had <strong>Apps</strong> section, select <strong>Add block</strong></p>
+      <p>Choose <strong>Apps</strong>, then find <strong>Product Buy Tracker</strong></p>
+      <p>Add <strong>Product Buy Tracker</strong> to <strong>Header</strong> by click app</p>
+      <p>App will be visible in <strong>Collections</strong> and <strong>Product</strong> page</p>
+    </div>
+    <div class="step-image">
+      <img src="add-app-section.png" alt="Theme customize app"/>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+  <!-- Step 3: Preview Settings -->
+  <div class="instruction-step">
+    <div class="step-header">
+      <div class="step-number">3</div>
+      <div class="step-title">Setting preview</div>
+    </div>
+    <div class="step-description">
+      <p>Below is app setting. It contains setting for both <strong>Collections</strong> and <strong>Product</strong> page </p>
+      <ul>
+        <li><strong>Enable</strong>: To enable badge and banner</li>
+        <li><strong>Badge Title</strong>: Title for badge showed in <strong>Collections</strong> page</li>
+        <li><strong>Badge background color</strong>: Background color of badge showed in <strong>Collections</strong> page. Default: #FA02C </li>
+        <li><strong>Badge text color</strong>: Text color of badge showed in <strong>Collections</strong> page. Default: #FFF </li>
+        <li><strong>Order detail background color</strong>: Background color of order detail banner showed in <strong>Product</strong> page. Default: #FFF </li>
+        <li><strong>Order detail text color</strong>: Text color of order detail banner showed in <strong>Product</strong> page. Default: #FFF </li>
+        <li><strong>Enable</strong>: Use custom HTML instead of default. Select this will use below HTML. Unselect it to use our default badge and detail banner</li>
+        <li><strong>Badge HTML</strong>: Custom HTML for badge showed in <strong>Collections</strong> page. Enable <strong>Use custom HTML</strong> to use this</li>
+        <li><strong>Order detail HTML</strong>: Custom HTML for order detail banner showed in <strong>Product</strong> page. Please include $boughtDate value in html to show the bought date. Enable <strong>Use custom HTML</strong> to use this</li>
+      </ul>
+    </div>
+    <div class="step-image">
+      <img src="extension-settings.png" alt="Extension Settings"/>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+  <!-- Step 4: Collection Page -->
+  <div class="instruction-step">
+    <div class="step-header">
+      <div class="step-number">4</div>
+      <div class="step-title">Collections Page</div>
+    </div>
+    <div class="step-description">
+      <p>App will generate badge for which product has been bought by login customer.</p>
+      <p>You can use setting to change color and text of badge. </p>
+      <p>In below picture is demo version for theme customize.</p>
+    </div>
+    <div class="step-image">
+      <img src="product-buy-badge.png" alt="Product Buy Badge"/>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------->
+  <!-- Step 5: Product Page -->
+  <div class="instruction-step">
+    <div class="step-header">
+      <div class="step-number">5</div>
+      <div class="step-title">Product Page</div>
+    </div>
+    <div class="step-description">
+      <p>App will generate banner in <strong>Product</strong> page with bought date for which product has been bought by login customer.</p>
+      <p>You can use setting to change color and text of banner.</p>
+      <p>In below picture is demo version for theme customize.</p>
+    </div>
+    <div class="step-image">
+      <img src="order-detail-banner.png" alt="Product Banner"/>
+    </div>
+  </div>
+</div>
+</body>
+</html>
